@@ -1,7 +1,7 @@
 PiSupply
 ========
 
-A C++ program that handles the [http://www.pi-supply.com]Pi Supply switch.
+A C++ program that handles the [Pi Supply](http://www.pi-supply.com) switch.
 
 Instructions
 ============
