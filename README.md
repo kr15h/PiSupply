@@ -11,12 +11,14 @@ Instructions
 ssh pi@your-pi-ip-or-host
 ```
 
-2. Make sure that you have git installed
+2. Make sure that you have git installed<br>
+```
 sudo apt-get install git-core
 sudo apt-get update
 sudo apt-get upgrade
+```
 
-3. Go to home directory and Install [http://wiringpi.com](WiringPi)<br>
+3. Go to home directory and Install [WiringPi](http://wiringpi.com)<br>
 ```
 cd /home/pi
 git clone git://git.drogon.net/wiringPi
