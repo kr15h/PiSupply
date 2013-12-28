@@ -6,8 +6,8 @@ A C++ program that handles the [Pi Supply](http://www.pi-supply.com) switch.
 Instructions
 ============
 
-1. Log in to your Raspberry Pi via SSH
-```bash
+1. Log in to your Raspberry Pi via SSH<br>
+```
 ssh pi@your-pi-ip-or-host
 ```
 2. Make sure that you have git installed
