@@ -7,9 +7,9 @@ Instructions
 ============
 
 1. Log in to your Raspberry Pi via SSH
-...
+```bash
 ssh pi@your-pi-ip-or-host
-...
+```
 2. Make sure that you have git installed
 sudo apt-get install git-core
 sudo apt-get update
