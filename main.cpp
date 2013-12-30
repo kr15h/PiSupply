@@ -6,7 +6,7 @@
 int main( )
 {
     if(wiringPiSetup() == -1){
-        printf("Failed to setup wiringPi\n", );
+        printf("%s \n", "Failed to setup wiringPi");
     }
     
     pinMode(7, INPUT);
@@ -14,7 +14,7 @@ int main( )
     while(1)
     {
         if(digitalRead(7) != 0){
-            printf("Attempting to shutdown the system...\n", );
+            printf("%s \n", "Attempting to shutdown the system...");
             system("sudo halt");
         }
         
