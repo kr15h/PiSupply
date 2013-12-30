@@ -8,7 +8,7 @@ Instructions
 
 1. Log in to your Raspberry Pi via SSH<br>
 ```
-ssh pi@your-pi-ip-or-host
+ssh pi@111.222.333.444
 ```
 
 2. Make sure that you have git installed<br>
@@ -27,21 +27,21 @@ git pull origin
 ./build
 ```
 
-4. Go to the PiSupply  directory and clone this repo<br>
+4. Go to home directory again and clone this repo.<br>
 ```
-cd /home/pi/PiSupply
+cd /home/pi
 git clone https://github.com/kr15h/PiSupply.git
 ```
 
-5. Compile using GCC<br>
+5. Enter the newly created PiSupply directory and Compile using GCC.<br>
 ```
 cd PiSupply
-gcc -o piSupply -I/usr/local/include -L/usr/local/lib -lwiringPi main.cpp
+gcc -o PiSupply -I/usr/local/include -L/usr/local/lib -lwiringPi main.cpp
 ```
 
 6. Launch application and see if it works. The code inside main.cpp uses GPIO pin 7 to listen for the soft shutdown signal.<br>
 ```
-sudo ./piSupply
+sudo ./PiSupply
 ```
 
 Launch in Background
@@ -49,7 +49,7 @@ Launch in Background
 
 You might be interested to launch this in background so you can launch other apps and services. I doubt that the PiSupply could be the only reason for using the Raspberry Pi. To launch the application in background, use the following command:<br>
 ```
-nohup sudo ./piSupply &
+nohup sudo ./PiSupply &
 ```
 
 In my case I've added this to a startup shell script so it is launched when my RPi boots up. I won't explain it here now, there are a lot of different ways to do that.
