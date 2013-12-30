@@ -1,14 +1,12 @@
 #include <unistd.h>
-#include <iostream>
 #include <stdlib.h>
+#include <stdio.h>
 #include "wiringPi.h"
-
-using namespace std;
 
 int main( )
 {
     if(wiringPiSetup() == -1){
-        cout << "Error on wiringPi setup." << endl;
+        printf("Failed to setup wiringPi\n", );
     }
     
     pinMode(7, INPUT);
@@ -16,10 +14,10 @@ int main( )
     while(1)
     {
         if(digitalRead(7) != 0){
-            cout << "Attempting to shutdown the system..." << endl;
+            printf("Attempting to shutdown the system...\n", );
             system("sudo halt");
         }
         
-        usleep(16666); // 16666 = 60fps
+        usleep(100000); // 10fps
     }
 }
