@@ -49,7 +49,7 @@ Launch in Background
 
 You might be interested to launch this in background so you can launch other apps and services. I doubt that the PiSupply could be the only reason for using the Raspberry Pi. To launch the application in background, use the following command:<br>
 ```
-nohup sudo ./PiSupply &
+nohup sudo /home/pi/PiSupply/PiSupply &
 ```
 
 In my case I've added this to a startup shell script so it is launched when my RPi boots up. I won't explain it here now, there are a lot of different ways to do that.
