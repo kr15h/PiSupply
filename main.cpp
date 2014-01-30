@@ -15,7 +15,7 @@ int main( )
     {
         if(digitalRead(7) != 0){
             printf("%s \n", "Attempting to shutdown the system...");
-            system("sudo halt");
+            system("sudo shutdown -h now");
         }
         
         usleep(100000); // 10fps
